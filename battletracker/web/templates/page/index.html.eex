@@ -1,6 +1,6 @@
 <div class="jumbotron">
-  <h2>Welcome to Phoenix!</h2>
-  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
+  <h2>Welcome to Battletracker!</h2>
+  <p class="lead">A tabletop roleplaying game<br />campaign management system.</p>
 </div>
 
 <div class="row marketing">
