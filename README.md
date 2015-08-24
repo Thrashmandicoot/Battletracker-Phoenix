@@ -1,2 +1,3 @@
-# my-first-phoenix-app
-Delving into Elixir phoenix and building a simple app
+# Welcome to Battletracker!
+A tabletop roleplaying game
+campaign management system.
