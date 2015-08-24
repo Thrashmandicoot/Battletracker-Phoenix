@@ -1,0 +1,6 @@
+<h2>Edit encounter</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: encounter_path(@conn, :update, @encounter) %>
+
+<%= link "Back", to: encounter_path(@conn, :index) %>
