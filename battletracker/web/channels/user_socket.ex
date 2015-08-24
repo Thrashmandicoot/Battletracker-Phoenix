@@ -2,7 +2,7 @@ defmodule Battletracker.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "rooms:*", Battletracker.RoomChannel
+  channel "rooms:*", Battletracker.RoomChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
