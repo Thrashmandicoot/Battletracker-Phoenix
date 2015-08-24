@@ -1,0 +1,43 @@
+<h2>Show character</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @character.name %>
+  </li>
+
+  <li>
+    <strong>Job:</strong>
+    <%= @character.job %>
+  </li>
+
+  <li>
+    <strong>Total hp:</strong>
+    <%= @character.total_hp %>
+  </li>
+
+  <li>
+    <strong>Current hp:</strong>
+    <%= @character.current_hp %>
+  </li>
+
+  <li>
+    <strong>Armor class:</strong>
+    <%= @character.armor_class %>
+  </li>
+
+  <li>
+    <strong>Initiative:</strong>
+    <%= @character.initiative %>
+  </li>
+
+  <li>
+    <strong>Alive:</strong>
+    <%= @character.alive %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: character_path(@conn, :edit, @character) %>
+<%= link "Back", to: character_path(@conn, :index) %>

@@ -1,0 +1,28 @@
+<h2>Listing encounters</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for encounter <- @encounters do %>
+    <tr>
+      <td><%= encounter.title %></td>
+      <td><%= encounter.description %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: encounter_path(@conn, :show, encounter), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: encounter_path(@conn, :edit, encounter), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: encounter_path(@conn, :delete, encounter), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New encounter", to: encounter_path(@conn, :new) %>

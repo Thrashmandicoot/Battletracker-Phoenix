@@ -1,0 +1,18 @@
+<h2>Show campaign</h2>
+
+<ul>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @campaign.title %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @campaign.description %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: campaign_path(@conn, :edit, @campaign) %>
+<%= link "Back", to: campaign_path(@conn, :index) %>

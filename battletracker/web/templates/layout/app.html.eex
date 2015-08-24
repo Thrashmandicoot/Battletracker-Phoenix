@@ -17,6 +17,8 @@
         <ul class="nav nav-pills pull-right">
           <li><a href="/">Homepage</a></li>
           <li><a href="/users">Users</a></li>
+          <li><a href="/campaigns">Campaigns</a></li>
+          <li><a href="/encounters">Encounters</a></li>
         </ul>
         <span class="logo"></span>
       </div>

@@ -18,8 +18,11 @@ defmodule Battletracker.Router do
 
     get "/", PageController, :index
     resources "/users", UserController
+    resources "/characters", CharacterController
+    resources "/campaigns", CampaignController
+    resources "/encounters", EncounterController
   end
-  
+
   # Other scopes may use custom stacks.
   # scope "/api", Battletracker do
   #   pipe_through :api

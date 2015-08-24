@@ -1,0 +1,18 @@
+<h2>Show encounter</h2>
+
+<ul>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @encounter.title %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @encounter.description %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: encounter_path(@conn, :edit, @encounter) %>
+<%= link "Back", to: encounter_path(@conn, :index) %>
