@@ -7,7 +7,7 @@ use Mix.Config
 
 # Configures the endpoint
 config :battletracker, Battletracker.Endpoint,
-  url: [host: System.get_env("SOCKET_HOST")],
+  url: [host: "localhost"],
   root: Path.dirname(__DIR__),
   secret_key_base: "2XNbDh95N9MQuGIHw3CFaY6spdIxVJRXKW0Jsbm1bKCUiDTciUXq1MYjkncfNC2I",
   render_errors: [accepts: ~w(html json)],

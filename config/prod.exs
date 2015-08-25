@@ -15,6 +15,7 @@ config :battletracker, Battletracker.Endpoint,
   http: [port: {:system, "PORT"}],
   url: [scheme: "https", host: "battletracker-phoenix.heroku.com", port: 443],
   force_ssl: [rewrite_on: [:x_forwarded_proto]],
+  check_origin: false,
   cache_static_manifest: "priv/static/manifest.json"
 
 config :logger, level: :info
